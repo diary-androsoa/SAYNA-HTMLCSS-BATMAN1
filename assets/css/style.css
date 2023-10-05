@@ -1,0 +1,404 @@
+/* Polices */
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../webfonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: 'space grotesk';
+    src: url(../SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+/* Importation d'url de police */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@700&display=swap');
+
+/* Paramètrage de couleurs */
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #1958FD;
+    --red-color: #B11313;
+    --black-color: #0D0E09;
+    --gris-color: #c4c4c4;
+    --white-color: #fff;
+    --gradient-white: #EDDEBF40;
+    --gradient-white-40: rgba(255, 255, 255, 0.4);
+    --gradient-red: #89000960;
+    --gradient-red-40:rgba(137, 0, 9, 0.6);
+    --gradient-grey: #EDDEBF40;
+    --gradient-gray: #19587D40;
+
+}
+
+ 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul a{
+   color:var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Rajdhani";
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a.selected{
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    font-weight: 900 !important;
+} 
+
+.inline-item{
+   display: flex;
+}
+
+.inline-item li{
+   padding-right: 2em;
+   transform: upper;
+}
+
+#hero {
+    height: 800px;
+    text-align: center;
+}
+
+.titre{
+    margin: 20px 0;
+}
+
+.btn{
+   text-decoration: none;
+   color: var(--white-color);
+   font-size: 16px;
+   margin-top: 10px;
+   padding: 10px 40px;
+   background: linear-gradient(
+    80deg, var(--gradient-white-40), var(--gradient-red-40)
+   );
+   box-shadow: var(--black-color) 5px 5px 60px;
+
+}
+.btn:hover{
+   background: linear-gradient(
+    80deg, var(--white-color), var(--red-color)
+   );
+}
+.fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 400px;
+
+}
+
+.image-hover{
+   transition: filter 0.3s ease-in-out;
+}
+
+.image-hover:hover{
+   filter:grayscale(0%) sepia(100%);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top:5em;
+
+}
+.hero{
+   margin-top:3em;
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+   
+}
+
+body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: 'Rajdhani'; 
+    font-weight: 0px ;
+    background-image: url(../illustrations/Bathome1.png);
+    background-repeat: no-repeat;
+    background-position: top ;
+    margin: 0 200px;
+
+}
+
+header{
+   border: 1px solid var(--gradient-white);
+   margin: 0 102px;
+}
+
+.main{
+   border: 1px solid var(--gradient-white);
+   margin: 0 102px;
+}
+section{
+   padding: 0 30px;
+}
+ h1{
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 500;
+    
+ }
+
+ h2{
+    font-family: 'Rajdhani';
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+ }
+
+ button{
+    font-family: 'Rajdhani-Medium';
+    font-size: 10px;
+    font-weight: 100;
+ }
+
+
+
+ .container{
+    width: 100%;
+    margin: 0 auto;
+ }
+
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 250px;
+    top: 230px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
+
+ #batman-cinema{
+    margin-top: 40px 0;
+ }
+ .batman-personnage{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 40px;
+ }
+ 
+.d, .e, .f, .g, .h{
+    margin-bottom: 40px;
+    width: 80%;
+    margin-top: 40px; 
+    text-align: justify;
+}
+
+.allies{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 40px;
+
+ }
+
+.nemesis{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 40px;
+
+ }
+
+ .justice-league{
+    display: block;
+    margin-top: 40px;
+ }
+
+ #multimedia .slider-multimedia{
+    display: flex;
+    width: 58%;
+    margin: 40px auto;
+ }
+
+ #multimedia .slider-image{
+    width: 100%;
+ }
+
+ #multimedia .slider-content{
+    padding: 20px;
+    background-color: rgba(36, 35, 35, 0.438);
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    background: linear-gradient(
+        100deg, var(--gradient-white), rgba(128, 128, 128, 0.425)
+       );
+    
+
+ }
+
+#multimedia p{
+    font-size: 14px;
+    text-align: justify;
+ }
+
+ #multimedia button{
+    position: relative;
+    top: 155px;
+    background-color: transparent;
+    border: none;
+ }
+
+ #multimedia button.right{
+    right: -92%;
+ }
+
+ #multimedia .yellow{
+    color: var(--yellow-color);
+ }
+
+
+ #formulaire{
+    background: linear-gradient(
+    80deg, var(--gradient-grey), var(--gradient-gray)
+   );
+   box-shadow: var(--black-color) 5px 5px 60px;
+   padding: 60px;
+ }
+
+ #formulaire h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+ }
+
+ #formulaire .titre{
+    display: block;
+   margin: 25px 0;  
+ }
+
+ #formulaire .form{
+    width: 50%;
+    margin: 0 auto;
+ }
+
+ #formulaire .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 1px solid var(--white-color);
+    background-color: transparent;
+    padding-top: 10px 0 ;
+ }
+
+ #formulaire .form .icon img{
+    transform: rotate(90deg);
+    width: 15px;
+    
+ }
+
+ #formulaire .news{
+    margin: 15px 0;
+    border-bottom: 1px solid var(--white-color);
+ }
+
+ ::placeholder{
+    color: #c4c4c4;
+    font-size: 15px;
+ }
+
+ .btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .form input[type='radio']{
+    opacity: 0;
+ }
+
+ .form .btn-group label{
+    cursor: pointer;
+    border: 1px solid;
+    border-image: linear-gradient(
+        69deg, --gradient-white
+    );
+    padding: 10px;
+    font-size: 18px;
+ }
+
+ input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 40px;
+    background: linear-gradient(
+    80deg, var(--gradient-white), var(--gradient-red)
+   );
+   border: none;
+ }
+
+ #citations{
+    margin: 90px ;
+ }
+
+ #citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+ }
+
+ #citations .citation-auteur{
+    padding-top: 10px;
+    font-size: 12px;
+ }
+
+ #citations .guillemet-close{
+   float: right;
+ }
+
+ 
+
+footer{
+   margin-top: 163px;
+}
+ footer .text-footer{
+   text-align: center;
+   font-size: 12px;
+ }
+ footer .social-footer{
+   text-align: center;
+   margin: 50px;
+ }
+
+ footer .social-item{
+   padding: 15px;
+ }
